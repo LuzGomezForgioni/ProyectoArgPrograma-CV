@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Luz</title>
+    <!--Fav Icon-->
+    <link rel="shortcut icon" href="img/icono.png">
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--Link FontAwesome-->
+    <script src="https://kit.fontawesome.com/c1486b617e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="parallax">
+        <h2>Bienvenido a mi Curriculum Vitae</h2>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobreMi">SOBRE MI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#conocimientos">CONOCIMIENTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="img--presentacion">
+            <img src="img/luz.jpg" alt="Imagen de presentación de Luz">
+        </div>
+        <span>
+            <h2><i>Luz Gómez Forgioni</i></h2>
+        </span>
+    </header>
+
+    <main>
+        <section class="sobreMi" id="sobreMi">
+            <span><img class="img--sobreMi" src="img/Foto Luz 1.jpg" alt="Imagen Luz"></span>
+            <div>
+                <h4>Sobre Mi</h4>
+                <p class="info">Mi nombre es Luz, tengo 20 años y orgullosamente soy del mismo país que el más grande del mundo, Messi. Nací en Buenos Aires capital pero casi toda mi vida la viví en Bell Ville, Córdoba. Tengo una perrhija que se llama Ona la cual amo mucho. Empecé a meterme en el mundo de la programación en el 2022 y siempre tuve el interés por estos temas.
+                Soy una persona proactiva, organizada y responsable, con buenas relaciones interpersonales. Siempre tengo la mejor disposición para la realización de mis labores. Busco un puesto desafiante donde pueda continuar aprendiendo.</p>
+                <h4>Información básica</h4>
+                <p><strong>Fecha de nacimiento:</strong> 30/03/2002</p>
+                <p><strong>Email:</strong> luzgomezforgioni@gmail.com</p>
+                <p><strong>Celular:</strong> 3537 - 513760</p>
+                <p><strong>Secundario completo</strong></p>
+            </div>
+        </section>
+
+        <section id="conocimientos">
+            <h3>Conocimientos</h3>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+        </section>
+
+        <section class="sec--contacto" id="contacto">
+                <article class="art--contacto">
+                    <h2 class="h2--contacto">Podes contactarte conmigo vía <strong><a href="https://whatsapp.com"
+                                target="_blank"> What's App </a></strong>, por <strong><a href="https://gmail.com"
+                                target="_blank"> Mail </a></strong> o sino a través del siguiente formulario:
+                    </h2>
+                    <form class="form" id="form" action="https://formspree.io/f/mnqrbbgd" method="POST">
+                        <!-- Grupo: Apellido -->
+                        <div class="form__grupo" id="grupo__apellido">
+                            <div class="form-floating mb-3 form__grupo-input">
+                                <input name="apellido" type="text" class="form-control form__input" id="floatingInput"
+                                    placeholder="Apellido">
+                                <label for="floatingInput" class="form__label">Apellido</label>
+                                <i class="form__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="form__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                        </div>
+        
+                        <!-- Grupo: Nombre -->
+                        <div class="form__grupo" id="grupo__nombre">
+                            <div class="form-floating mb-3 form__grupo-input">
+                                <input name="nombre" type="text" class="form-control form__input" id="floatingInput" placeholder="Nombre">
+                                <label for="floatingInput" class="form__label">Nombre</label>
+                                <i class="form__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="form__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                        </div>
+        
+                        <!-- Grupo: Mail -->
+                        <div class="form__grupo" id="grupo__correo">
+                            <div class="form-floating mb-3 form__grupo-input">
+                                <input name="correo" type="email" class="form-control form__input" id="floatingInput" placeholder="Email">
+                                <label for="floatingInput" class="form__label">Email</label>
+                                <i class="form__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="form__input-error">El mail solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                        </div>
+        
+                        <!-- Grupo: Teléfono -->
+                        <div class="form__grupo" id="grupo__telefono">
+                            <div class="form-floating mb-3 form__grupo-input">
+                                <input name="telefono" type="number" class="form-control form__input" id="floatingInput" placeholder="Telefono">
+                                <label for="floatingInput" class="form__label">Telefono</label>
+                                <i class="form__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="form__input-error">El telefono solo puede contener numeros el mínimo son 7 y el maximo 14 dígitos.</p>
+                        </div>
+        
+                        <!-- Grupo: Comentarios -->
+                        <div class="form__grupo" id="grupo__comentarios">
+                            <div class="form-floating mb-3 form__grupo-input">
+                                <textarea name="comentarios" type="text" class="form-control form__input" placeholder="Comentarios" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2" class="form__label">Comentarios</label>
+                                <i class="form__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="form__input-error">Por favor escriba sus dudas explayándose en más de 20 caracteres</p>
+                        </div>
+        
+                        <!-- Grupo: Terminos y Condiciones -->
+                        <div class="form__grupo" id="grupo__terminos">
+                            <label class="form__label">
+                                <input class="form__checkbox" type="checkbox" name="terminos" id="terminos">
+                                Acepto los Terminos y Condiciones
+                            </label>
+                        </div>
+        
+                        <div class="form__mensaje" id="form__mensaje">
+                            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                        </div>
+        
+                        <div class="col-12 form__grupo form__grupo-btn-enviar">
+                            <button type="submit" class="btn mb-3 w-100">Enviar</button>
+                            <p class="form__mensaje-exito" id="form__mensaje-exito">Formulario enviado exitosamente!</p>
+                        </div>
+                    </form>
+                </article>
+        
+                <article class="art--contacto">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217954.93389016393!2d-64.33443089842898!3d-31.39908397269355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses!2sar!4v1666053322985!5m2!1ses!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer1">
+            <div class="footerInline2">
+                <h4>Seguime</h4>
+                <a href="https://www.facebook.com" target="_blank"> <i
+                        class="fa-brands fa-facebook"></i> </a>
+                <a href="https://www.instagram.com" target="_blank"> <i
+                        class="fa-brands fa-instagram"></i> </a>
+                <a href="https://twitter.com" target="_blank"> <i class="fa-brands fa-twitter"></i> </a>
+            </div>
+
+            <div class="footerInline2">
+                <h4>Contacto</h4>
+                <a href="https://whatsapp.com" target="_blank"> <i class="fa-brands fa-whatsapp"></i> </a>
+                <a href="https://gmail.com" target="_blank"> <i class="fa-solid fa-envelope"></i> </a>
+            </div>
+        </div>
+
+        <div class="footer2">
+            <p> © Luz Gómez Forgioni – Todos los derechos reservados </p>
+        </div>
+    </footer>
+
+    <!-- Link Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <!-- Link JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>
