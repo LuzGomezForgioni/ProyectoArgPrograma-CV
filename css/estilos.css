@@ -96,6 +96,17 @@ main{
     width: 350px;
 }
 
+/* Conocimientos */
+.conocimientos{
+    text-align: center;
+    font-weight: bold;
+}
+
+.conocimientos img{
+    width: 150px;
+    margin: 30px 50px 70px 50px;
+}
+
 /* Contacto */
 .form {
     width: 400px;
@@ -108,15 +119,20 @@ main{
     padding: 30px;
 }
 
+.h2--contacto a{
+    text-decoration: none;
+    color: black;
+}
+
 .btn {
     font-weight: 600;
-    background-color: #fcb681;
+    background-color: lightblue;
     border: #121212 solid 1px;
 }
 
 .btn:first-child:hover {
-    background-color: bisque;
-    border: #fcb681 solid 1px;
+    background-color: #d5edf5;
+    border: lightblue solid 1px;
 }
 
 .sec--contacto {
@@ -219,12 +235,12 @@ footer p {
 }
 
 .footer1 {
-    background-color: #121212;
+    background-color: #212529;
     padding: 12px 0;
 }
 
 .footer2 {
-    background-color: black;
+    background-color: #121212;
 }
 
 footer a{
